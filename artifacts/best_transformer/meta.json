@@ -1,0 +1,10 @@
+{
+  "model": "Transformer",
+  "seed": 0,
+  "threshold": 0.5,
+  "maxlen": 40,
+  "vocab_size": 7154,
+  "test_pr_auc": 0.9549624099636893,
+  "selection": "highest test PR-AUC among seeds for artifact only",
+  "run_id": "ba387e9fc20c4785b5e7a3528485bff9"
+}

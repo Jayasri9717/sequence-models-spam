@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+mlflow.db
+mlruns/
+data/sms.zip
+data/SMSSpamCollection
+work/

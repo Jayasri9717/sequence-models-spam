@@ -1,0 +1,167 @@
+{
+  "data": {
+    "n": 5572,
+    "spam": 747,
+    "ham": 4825,
+    "train": 3900,
+    "validation": 836,
+    "test": 836,
+    "vocab_size": 7154
+  },
+  "baseline": {
+    "f1": 0.9327354260089686,
+    "precision": 0.9369369369369369,
+    "recall": 0.9285714285714286,
+    "roc_auc": 0.9901218429360694,
+    "pr_auc": 0.973980566375551
+  },
+  "baseline_run_id": "aa71d08dfb9f4495bd7b092eee41ae7f",
+  "runs": [
+    {
+      "model": "BiRNN",
+      "seed": 0,
+      "best_epoch": 8,
+      "best_val_pr_auc": 0.9745035863825499,
+      "training_time_seconds": 94.60622119903564,
+      "metrics": {
+        "f1": 0.9140271493212669,
+        "precision": 0.926605504587156,
+        "recall": 0.9017857142857143,
+        "roc_auc": 0.9913797355958958,
+        "pr_auc": 0.968521529727123
+      },
+      "run_id": "ceef88ceeb2a40f48e396ab528a91bdf"
+    },
+    {
+      "model": "BiRNN",
+      "seed": 1,
+      "best_epoch": 7,
+      "best_val_pr_auc": 0.9372166464079923,
+      "training_time_seconds": 43.01101279258728,
+      "metrics": {
+        "f1": 0.9014084507042254,
+        "precision": 0.9504950495049505,
+        "recall": 0.8571428571428571,
+        "roc_auc": 0.9832157655880032,
+        "pr_auc": 0.9486009469457327
+      },
+      "run_id": "1f839d9ee54945178e34fdfedf8aa02c"
+    },
+    {
+      "model": "BiRNN",
+      "seed": 2,
+      "best_epoch": 4,
+      "best_val_pr_auc": 0.9591783442083661,
+      "training_time_seconds": 44.59291863441467,
+      "metrics": {
+        "f1": 0.84375,
+        "precision": 0.75,
+        "recall": 0.9642857142857143,
+        "roc_auc": 0.9783815114443567,
+        "pr_auc": 0.8991251596027573
+      },
+      "run_id": "73e7256f945f465b851c28e9143a492f"
+    },
+    {
+      "model": "BiLSTM",
+      "seed": 0,
+      "best_epoch": 6,
+      "best_val_pr_auc": 0.9717662858261852,
+      "training_time_seconds": 63.85388803482056,
+      "metrics": {
+        "f1": 0.9174311926605505,
+        "precision": 0.9433962264150944,
+        "recall": 0.8928571428571429,
+        "roc_auc": 0.9903068271507498,
+        "pr_auc": 0.9701479730255629
+      },
+      "run_id": "811a80558a1a47b4b3a9bf0d4ee86b44"
+    },
+    {
+      "model": "BiLSTM",
+      "seed": 1,
+      "best_epoch": 7,
+      "best_val_pr_auc": 0.9610199406926899,
+      "training_time_seconds": 86.04355311393738,
+      "metrics": {
+        "f1": 0.919431279620853,
+        "precision": 0.9797979797979798,
+        "recall": 0.8660714285714286,
+        "roc_auc": 0.9825621546961326,
+        "pr_auc": 0.9571328970930768
+      },
+      "run_id": "fd1eced0ceb84c46b1a6a4845c1cdf71"
+    },
+    {
+      "model": "BiLSTM",
+      "seed": 2,
+      "best_epoch": 8,
+      "best_val_pr_auc": 0.9766635349607236,
+      "training_time_seconds": 81.49776244163513,
+      "metrics": {
+        "f1": 0.9177489177489178,
+        "precision": 0.8907563025210085,
+        "recall": 0.9464285714285714,
+        "roc_auc": 0.9808479676400947,
+        "pr_auc": 0.9377950564843622
+      },
+      "run_id": "58d9ef11292342cf9ff71a5db6237480"
+    },
+    {
+      "model": "Transformer",
+      "seed": 0,
+      "best_epoch": 8,
+      "best_val_pr_auc": 0.9506161731153865,
+      "training_time_seconds": 112.3072350025177,
+      "metrics": {
+        "f1": 0.9158878504672897,
+        "precision": 0.9607843137254902,
+        "recall": 0.875,
+        "roc_auc": 0.9876553867403315,
+        "pr_auc": 0.9549624099636893
+      },
+      "run_id": "ba387e9fc20c4785b5e7a3528485bff9"
+    },
+    {
+      "model": "Transformer",
+      "seed": 1,
+      "best_epoch": 8,
+      "best_val_pr_auc": 0.9019230292163958,
+      "training_time_seconds": 90.47262692451477,
+      "metrics": {
+        "f1": 0.864321608040201,
+        "precision": 0.9885057471264368,
+        "recall": 0.7678571428571429,
+        "roc_auc": 0.9726963299131807,
+        "pr_auc": 0.9310866455592209
+      },
+      "run_id": "d9ddad92f51b4b25a4da2c40d1e8f86a"
+    },
+    {
+      "model": "Transformer",
+      "seed": 2,
+      "best_epoch": 8,
+      "best_val_pr_auc": 0.9531811863270211,
+      "training_time_seconds": 188.07355546951294,
+      "metrics": {
+        "f1": 0.9174311926605505,
+        "precision": 0.9433962264150944,
+        "recall": 0.8928571428571429,
+        "roc_auc": 0.9819825374901341,
+        "pr_auc": 0.9531004835749902
+      },
+      "run_id": "131eb195c7e34b37a546730bd8f7663d"
+    }
+  ],
+  "selected_transformer_seed": 0,
+  "test_confusion_matrix": [
+    [
+      720,
+      4
+    ],
+    [
+      14,
+      98
+    ]
+  ]
+}

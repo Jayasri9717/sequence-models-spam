@@ -1,0 +1,72 @@
+{
+  "paper": "Vaswani et al. (2017), Attention Is All You Need, arXiv:1706.03762",
+  "runs": [
+    {
+      "seed": 0,
+      "best_epoch": 7,
+      "best_val_pr_auc": 0.9570484945239928,
+      "training_time_seconds": 160.8377194404602,
+      "metrics": {
+        "f1": 0.908256880733945,
+        "precision": 0.9339622641509434,
+        "recall": 0.8839285714285714,
+        "roc_auc": 0.9874210734017365,
+        "pr_auc": 0.9508129857595395
+      },
+      "run_id": "f405017566d641b5917eb22b93ddb517"
+    },
+    {
+      "seed": 1,
+      "best_epoch": 8,
+      "best_val_pr_auc": 0.9238799159954055,
+      "training_time_seconds": 154.88298201560974,
+      "metrics": {
+        "f1": 0.9004739336492891,
+        "precision": 0.9595959595959596,
+        "recall": 0.8482142857142857,
+        "roc_auc": 0.9791831097079716,
+        "pr_auc": 0.9424368575566502
+      },
+      "run_id": "dfcc9921de6e4c21a5b8fc1e67f8bdfc"
+    },
+    {
+      "seed": 2,
+      "best_epoch": 8,
+      "best_val_pr_auc": 0.9546312372610624,
+      "training_time_seconds": 104.85118079185486,
+      "metrics": {
+        "f1": 0.8841201716738197,
+        "precision": 0.8512396694214877,
+        "recall": 0.9196428571428571,
+        "roc_auc": 0.9781718626677189,
+        "pr_auc": 0.939357401964502
+      },
+      "run_id": "30a78de7bcb84918944aabb7a7c1c392"
+    }
+  ],
+  "summary": {
+    "f1_mean": 0.8976169953523513,
+    "f1_std": 0.010058719381301814,
+    "nn_f1_mean": 0.899213550389347,
+    "nn_f1_std": 0.024680372862573418,
+    "precision_mean": 0.9149326310561302,
+    "precision_std": 0.04623755044611826,
+    "nn_precision_mean": 0.9642287624223403,
+    "nn_precision_std": 0.018576246208903153,
+    "recall_mean": 0.8839285714285715,
+    "recall_std": 0.0291605921759902,
+    "nn_recall_mean": 0.8452380952380952,
+    "nn_recall_std": 0.05520011009223632,
+    "roc_auc_mean": 0.9815920152591424,
+    "roc_auc_std": 0.00414239015275095,
+    "nn_roc_auc_mean": 0.9807780847145487,
+    "nn_roc_auc_std": 0.006166110343695519,
+    "pr_auc_mean": 0.9442024150935638,
+    "pr_auc_std": 0.004840488617443233,
+    "nn_pr_auc_mean": 0.9463831796993002,
+    "nn_pr_auc_std": 0.010842959620361662,
+    "manual_minus_nn_pr_auc_mean": -0.0021807646057363517
+  },
+  "matched": "64-dimensional token embeddings, learned positions, two encoder layers, four heads, 128-dimensional feed-forward network, dropout 0.1, key-padding mask, masked mean pooling, same split, seeds, optimizer, loss, epoch selection, and test metrics.",
+  "differences": "Q/K/V projections, head splitting, score scaling, key mask, softmax, and weighted value aggregation are explicit matmul code. The native PyTorch encoder uses its built-in attention implementation and may use fused kernels. Parameter initialization and random-number consumption differ, so numerical outputs are not expected to match exactly."
+}

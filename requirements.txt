@@ -1,0 +1,10 @@
+numpy
+pandas
+scikit-learn
+torch
+mlflow
+alembic
+fastapi
+uvicorn
+pytest
+httpx
